@@ -5,3 +5,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+.container {
+  height: 100%;
+  background: gray;
+  display: grid;
+  grid-template-columns: repeat(10, 200px) 1fr;
+  grid-template-rows: repeat(10, 200px);
+  perspective: 3800px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: salmon;
+  
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  grid-area: 1 / 2;
+}
+
+.b {
+  grid-area: 2 / 2;
+  background: skyblue;
+}
+
+.c {
+  grid-area: 10 / 2;
+  background: #bad555;
+}
+
+.d {
+  grid-area: 4 / 3;
+}
+
+.e {
+  grid-area: 8 / 4;
+}
+
+.f {
+  grid-area: 3 / 5;
+}
+
+.g {
+  grid-area: 7 / 5;
+}
